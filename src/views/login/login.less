@@ -1,0 +1,107 @@
+.login {
+  width: 100vw;
+  min-height: 100vh;
+  background-image: url("../../assets/img/login-bg.jpg");
+  background-size: cover;
+  background-position: center bottom;
+  background-attachment: fixed;
+  background-color: #011221;
+
+  &-con {
+    padding-top: 166px;
+    min-height: 800px;
+    text-align: center;
+    .login-logo {
+      padding-bottom: 100px;
+    }
+
+    .ivu-form {
+      margin: 0 auto;
+      padding: 40px 70px;
+      width: 525px;
+      height: 398px;
+      background-image: url(../../assets/img/login-formbg.png);
+      background-repeat: no-repeat;
+      background-size: 100%;
+      background-color: rgba(0, 102, 217, 0.3);
+      .title {
+        padding-bottom: 20px;
+        font-size: 18px;
+        color: #fefefe;
+      }
+      .ivu-form-item {
+        height: 48px;
+        margin-bottom: 30px;
+        &-content {
+          line-height: 48px;
+          border-radius: 4px;
+          background: rgba(0, 102, 217, 0.3);
+        }
+        .ivu-input {
+          height: 48px;
+          font-size: 16px;
+          color: #fff;
+          border: none;
+          &:focus {
+            box-shadow: none;
+          }
+        }
+        .ivu-input-group-prepend {
+          color: #7891c4;
+          padding: 0 10px;
+          border: none;
+          background: transparent;
+          .iconfont {
+            font-size: 18px;
+            color: #7891c4;
+          }
+        }
+
+        &.confirm {
+          height: 54px;
+          .ivu-form-item-content {
+            background: transparent;
+          }
+          .ivu-btn-primary {
+            height: 54px;
+            font-size: 20px;
+            color: #e0efff;
+            border: none;
+            background: #0066d9;
+            &:focus {
+              box-shadow: none;
+            }
+          }
+        }
+      }
+      .ivu-form-item-error-tip {
+        font-size: 10px;
+        text-align: center;
+        color: #c3c3c3;
+      }
+      .link-text {
+        display: inline-block;
+        padding: 3px;
+        color: #00c0ff;
+        text-decoration: underline;
+        cursor: pointer;
+      }
+      .code {
+        text-align: center;
+      }
+    }
+    input:-webkit-autofill,
+    textarea:-webkit-autofill,
+    select:-webkit-autofill {
+      -webkit-text-fill-color: #a1b3d0 !important;
+      // -webkit-box-shadow: 0 0 0px 1000px transparent inset !important;
+      background-color: transparent !important;
+      background-image: none;
+      transition: background-color 50000s ease-in-out 0s;
+    }
+
+    input {
+      background-color: transparent !important;
+    }
+  }
+}
